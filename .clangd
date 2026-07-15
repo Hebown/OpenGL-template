@@ -1,0 +1,5 @@
+CompileFlags:
+    # build/debug 下找数据库
+    CompilationDatabase: "build/debug"
+    CompilationDatabase: "build/release"
+    CompilationDatabase: "build"
