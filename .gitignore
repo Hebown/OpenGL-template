@@ -1,0 +1,14 @@
+# c++构建产物
+build/
+
+# 本地环境
+.env
+
+# wsagent 相关
+.wsAgent
+
+# docs
+docs/
+
+# 默认第三方路径
+third_party/vcpkg/
