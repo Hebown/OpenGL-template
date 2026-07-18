@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # ---------------------------------------------------------------------------
 find_package(glfw3 CONFIG REQUIRED)
 find_package(glad CONFIG REQUIRED)
+find_package(glm CONFIG REQUIRED)
 find_package(Stb REQUIRED)
 
 # macOS 使用系统自带的 OpenGL Framework，不需要 find_package(OpenGL)
@@ -22,6 +23,7 @@ endif()
 # ---------------------------------------------------------------------------
 add_executable(OpenGLApp 
     src/main.cpp
+    src/shader.cpp
 )
 
 # ---------------------------------------------------------------------------
@@ -31,6 +33,7 @@ target_link_libraries(OpenGLApp
     PRIVATE
         glfw
         glad::glad
+        glm::glm
 )
 
 if(APPLE)
